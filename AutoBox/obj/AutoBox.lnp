@@ -1,0 +1,8 @@
+"..\obj\STARTUP.obj",
+"..\obj\main.obj",
+"..\obj\timer0.obj",
+"..\obj\motor.obj",
+"..\obj\adc.obj",
+"..\obj\eeprom.obj" 
+TO "..\obj\AutoBox" 
+PRINT("..\list\AutoBox.m51") RAMSIZE(256) 

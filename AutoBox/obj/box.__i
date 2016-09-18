@@ -1,0 +1,1 @@
+"..\user\box.c" BROWSE INCDIR(..\include) DEBUG OBJECTEXTEND PRINT(..\list\box.lst) OBJECT(..\obj\box.obj)

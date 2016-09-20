@@ -190,8 +190,8 @@
       <Focus>0</Focus>
       <ColumnNumber>10</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>608</TopLine>
-      <CurrentLine>626</CurrentLine>
+      <TopLine>5</TopLine>
+      <CurrentLine>5</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\user\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -281,7 +281,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\51单片机程序\自动翻盖小盒设计\INCLUDE\EEPROM.H</PathWithFilename>
+    <PathWithFilename>G:\GitHub\MCU-Source-Code\AutoBox\INCLUDE\EEPROM.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>7</CurrentLine>
     <Constant>0</Constant>
@@ -333,33 +333,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\51单片机程序\自动翻盖小盒设计\INCLUDE\ADC.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>7</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\51单片机程序\自动翻盖小盒设计\INCLUDE\MOTOR.H</PathWithFilename>
+    <PathWithFilename>G:\GitHub\MCU-Source-Code\AutoBox\INCLUDE\MOTOR.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>6</CurrentLine>
     <Constant>0</Constant>
@@ -385,7 +359,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\51单片机程序\自动翻盖小盒设计\INCLUDE\TIMER0.H</PathWithFilename>
+    <PathWithFilename>G:\GitHub\MCU-Source-Code\AutoBox\INCLUDE\TIMER0.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>6</CurrentLine>
     <Constant>0</Constant>
@@ -1756,8 +1730,8 @@
         <Doc>
           <Name>..\user\main.c</Name>
           <ColumnNumber>10</ColumnNumber>
-          <TopLine>608</TopLine>
-          <CurrentLine>626</CurrentLine>
+          <TopLine>5</TopLine>
+          <CurrentLine>5</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\INCLUDE\TIMER0.H</Name>
@@ -1782,12 +1756,6 @@
           <ColumnNumber>19</ColumnNumber>
           <TopLine>36</TopLine>
           <CurrentLine>36</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>\51单片机程序\自动翻盖小盒设计\INCLUDE\ADC.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>7</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\user\timer0.c</Name>

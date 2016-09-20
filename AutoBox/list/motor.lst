@@ -1,0 +1,73 @@
+C51 COMPILER V9.00   MOTOR                                                                 08/30/2016 22:33:58 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE MOTOR
+OBJECT MODULE PLACED IN ..\obj\motor.obj
+COMPILER INVOKED BY: D:\Program Files\KeilC51V9.00\C51\BIN\C51.EXE ..\user\motor.c BROWSE INCDIR(..\include) DEBUG OBJEC
+                    -TEXTEND PRINT(..\list\motor.lst) OBJECT(..\obj\motor.obj)
+
+line level    source
+
+   1          #include "motor.h"
+   2          #include <string.h>
+   3          
+   4          void Motor_init(struct motor *pMotor)
+   5          {
+   6   1              P1M0 |= 0x03; 
+   7   1              P1M1 &= ~0x03;
+   8   1              //电机状态初始化
+   9   1              Motor_set_status(pMotor,MOTOR_STOP);
+  10   1              memset(pMotor, 0, sizeof(struct motor));
+  11   1              //电机PWM控制器初始化
+  12   1              Motor_set_pwm(pMotor,0xff);     
+  13   1              pMotor->AdChNum = 2;
+  14   1              adc_init();
+  15   1      }
+  16          
+  17          void Motor_set_pwm(struct motor *pMotor,u8 pwm)
+  18          {
+  19   1              pMotor->pwm = pwm;      
+  20   1      } 
+  21          
+  22          void Motor_set_status(struct motor *pMotor,s8 status)
+  23          {
+  24   1              switch(status)
+  25   1              {
+  26   2                      case MOTOR_FORWORD:
+  27   2                              motor_pinN = 0;
+  28   2                              motor_pinP = 1;
+  29   2                              pMotor->status = MOTOR_FORWORD;
+  30   2                              break;
+  31   2                      case MOTOR_REVERSAL:
+  32   2                              motor_pinP = 0;
+  33   2                              motor_pinN = 1; 
+  34   2                              pMotor->status = MOTOR_REVERSAL;                
+  35   2                              break;
+  36   2                      case MOTOR_STOP:
+  37   2                              motor_pinP = 0;
+  38   2                              motor_pinN = 0;
+  39   2                              pMotor->status = MOTOR_STOP;
+  40   2                              break;
+  41   2              }
+  42   1      }
+  43          u8      Motor_get_current(struct motor *pMotor)
+  44          {
+  45   1              pMotor->current = GetADCResult();
+  46   1              return pMotor->current; 
+  47   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    138    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+C51 COMPILER V9.00   MOTOR                                                                 08/30/2016 22:33:58 PAGE 2   
+
+   DATA SIZE        =   ----       6
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
